@@ -24,3 +24,9 @@ ID of students as Instance is of the Admin.
 2)Perform Password Encryption (Initial auto-password: Password123)
 3)Store details in Student_Profile
 
+OR
+
+1)Import CSV file and fetch details.
+2)Perform Password Encryption (Initial auto-password: Password123)
+3)Store details in Student_Profile
+
