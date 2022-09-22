@@ -18,6 +18,11 @@ ID of students as Instance is of the Admin.
 1)For Admin Firebase Auth will help.
 2)For Student you need to store email, isLogin bool in SQLlite and with logout you need to update isLogin bool as false.
 
+#Steps for Splash Screen
+
+1)Check for Admin in FirebaseAuth:true - > Dashboard, FirebaseAuth:false - > Login
+2)Check for SQLite for isLogin -> true: - > Dashboard(get email from SQLite), isLogin:false - > Login
+
 #Steps of Adding(Student) by Admin-
 
 1)Fill details 
