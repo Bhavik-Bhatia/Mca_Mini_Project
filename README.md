@@ -15,13 +15,15 @@ ID of students as Instance is of the Admin.
 
 #Steps to remember Authentication
 
-1)For Admin Firebase Auth will help.
-2)For Student you need to store email, isLogin bool in SQLlite and with logout you need to update isLogin bool as false.
+1)For Admin Firebase Auth will help. But also after login add isAdmin:true in a Shared Pref for making Splash screen transistion faster.
+2)For Student you need to store email, isLogin:true in a Shared Pref at time of Login and when you logout make the isLogin:false. Also repeat the same step
+for same Shared Pref isAdmin:false in AdminCheck Shared Pref.
 
 #Steps for Splash Screen
 
-1)Check for Admin in FirebaseAuth:true - > Dashboard, FirebaseAuth:false - > Login
-2)Check for SQLite for isLogin -> true: - > Dashboard(get email from SQLite), isLogin:false - > Login
+1)First check isAdmin from AdminCheck Shared Pref then according to it go to step 2 if true or step 3 if false.
+2)Check for Admin in FirebaseAuth:true - > Dashboard, FirebaseAuth:false - > Login
+3)Check for SQLite for isLogin -> true: - > Dashboard(get email from SQLite), isLogin:false - > Login
 
 #Steps of Adding(Student) by Admin-
 
